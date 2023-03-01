@@ -38,7 +38,7 @@ pub struct AutoCertListener<T> {
 }
 
 impl<T> AutoCertListener<T> {
-    pub(crate) fn new(inner: T, auto_cert: AutoCert) -> Self {
+    pub fn new(inner: T, auto_cert: AutoCert) -> Self {
         Self { inner, auto_cert }
     }
 }
